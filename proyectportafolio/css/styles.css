@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menuham {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: #0f7058;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 4rem;
+  z-index: 1;
+}
+
+.contenlogo {
+  /* margin-left: 10rem; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.subcontenlogo {
+  /* margin-left: 10rem; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contenlogoletra {
+  margin-left: 0.5rem;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contengoletra p {
+  text-align: center;
+}
+
+.logo {
+  width: 3rem;
+  border-radius: 25rem;
+}
+
+.logo:hover {
+  transition: 2s ease-in-out;
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.24);
+}
+
+.estrella {
+  margin: 1rem;
+  border-radius: 25rem;
+  width: 15rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+a {
+  color: black;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.navlist {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  /* margin-right: 3rem; */
+}
+
+.navlist li {
+  list-style: none;
+  color: whitesmoke;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.navlist li a:hover {
+  transition: 0.5s ease;
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+/*menu pantalla completa*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.habil {
+  margin: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.habil span {
+  color: rgb(39, 35, 35);
+  background-color: white;
+  font-size: 1.3rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
+  border-radius: 42px;
+  padding: 0.5em 0.9em;
+  margin: 0.5rem;
+  transition: 0.9s ease-in-out;
+}
+
+.habil span:hover {
+  background-color: #0f7058;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.219);
+}
+
+.cursos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+  margin: 1rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 40px;
+  margin: 4.2rem;
+}
+
+.card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+/*responsivo*/
+
+@media only screen and (max-width: 900px) {
+  .habil {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .navlist {
+    display: none;
+  }
+  .menuham {
+    display: block;
+    background: transparent;
+    border: 0px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

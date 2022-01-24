@@ -1,0 +1,44 @@
+.introduccion{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .introduccion-informacion{
+    margin-bottom: 20px;
+    margin: 10px 4rem 10px 4rem;
+  }
+  .introduccion-informacion p{
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom: 2rem;
+    font-size:20px;
+    /* line-height: 1.2; */
+    text-align: center;
+  }
+  .introduccion img{
+    z-index: -1;
+     margin: 0.3rem;
+     width: 80%;
+     max-width: 15rem;
+     padding: 1rem;
+     transform: scaleX(1) 
+  }
+  /*! dispositivos de 760px en adelante */
+  @media (min-width: 760px) {
+   .introduccion{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width:760px;
+      margin:50px auto;
+   }
+   .introduccion img{
+     margin-left: 20px;
+     max-width: 250px;   
+     max-height: 320px;
+    transform: scaleX(1);
+    
+   }
+   
+  }
+  

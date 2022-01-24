@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- charset sirve para que la paguina cargue caracteres especiales como * tildes ñ -->
+    <meta charset="UTF-8">
+    <meta name="autor" content="Jazmany Correa">
+    <meta name="description" content="Portal Web">
+    <!-- keywords sirve para poner palabras claves a mi pagina y posecionarla en la pagina -->
+    <meta name="keywords" content="desarrollo web, programacion,javascript,html">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport define el area de la pantalla que se visualiza en el navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/lineatiempo.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"> -->
+    <!-- Referenciar Javascript -->
+
+    <!-- <script src = '..//static/js/Menuhamburguesa.js'></script> -->
+    <!--title sirve para poner titulo a la pagina  -->
+    <title>Miguel Pico</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <!-- *a* se utiliza para referenciar links en un documento html5 -->
+            <div class="contenlogo">
+                <div class="subcontenlogo">
+                    <img class='logo' src="./img/Pico1.png" />
+                    <div class="contenlogoletra">
+                        <p> Miguel Pico</p>
+                        <p>{ Estudiante } </p>
+                    </div>
+                </div>
+                <div class="navlist">
+                    <li><a href='#Perfil'>Perfil</a></li>
+                    <li><a href='#Experiencia'>Experiencia</a></li>
+                    <li><a href='#Habilidades'>Habilidades</a></li>
+                    <li><a href='#Cursos'>Curso</a></li>
+                    <li><a href='#contacto'>Contacto</a></li>
+                </div>
+                <button class="menuham" id="btnmenu" type="button">
+                    <i class='bx bx-menu bx-tada' style='color:#ffffff'></i>
+                </button>
+            </div>
+
+            <!-- img referenciar imagenes utilizando la propiedad src(ruta) y alt para errores -->
+        </nav>
+        <!-- ul sirve para elistar un conjunto de opciones -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href='#Perfil'>PERFIL</a>
+                <a href='#Experiencia'>EXPERIENCIA</a>
+                <a href='#Habilidades'>HABILIDADES</a>
+                <a href='#Cursos'>CURSOS</a>
+                <a href='#contacto'>CONTACTO</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="sintaxis" id="Perfil">
+            <h2>PERFIL</h2>
+            <!-- Quien soy -->
+    
+        <section class="sintaxis">
+            <div class="introduccion">
+                <div class="introduccion-informacion">
+                    <h2>Hola, soy Miguel Pico</h2>
+                    <p>
+                        Soy estudiante de la Universidad Estatal de Milagro pertenezco a la carrera de ingenieria en software, y entos momentos me encuentro cursando la materia de Programación orientada a objetos con la cual estamos aprendiendo Html, Css y Javascript.
+                    </p>
+                    <a href="#" class='btndes'>Descargar cv</a>
+                </div>
+                <img class='estrella' src="./img/Pico1.png" alt="" />
+            </div>
+        </section>
+            <pre class="js">
+            <code id="perfil" >
+              
+            </code>
+          </pre>
+        </section>
+        <section class="sintaxis" id="Experiencia">
+            <h2>EXPERIENCIA</h2>
+            <div class="timeline">
+                <div class = 'colortime'>
+                <div class="container left">
+                  <div class="content">
+                    <h2>2020 - 2021</h2>
+                    <p>Participación del proyecto pis.
+                        Se realizó a través de Arduino un medidor de alcohol en el aliento. 
+                        </p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>2020-2019</h2>
+                    <p>ALJALO PROJECT.
+                        Desarrollamos una aplicación web con un framework de alto nivel denominado Django(usado en la asignatura DAI), donde podrán usarlo varios usuarios al mismo tiempo.
+                        </p>
+                  </div>
+                </div>
+                <div class="container left">
+                  <div class="content">
+                    <h2>2019-2018</h2>
+                    <p>Sistema para el control del ciclo de producción de cacao
+                        Se desarrollará un sistema para el control de la producción de cacao de manera que se vuelva más fácil su desarrollo
+                        </p>
+                  </div>
+                </div>
+                <div class="container right">
+                  <div class="content">
+                    <h2>2018-2017</h2>
+                    <p>Dispositivo de detección de tierra apta para la siembra
+                        Es muy común que las personas no sepan si la tierra es apta o no para sembrar los diferentes tipos de alimento, por tanto se construirá un aparato capas de detectar si la tierra es apta o no para el sembrío midiendo el nivel de agua que se presenta en el suelo.
+                        </p>
+                  </div>
+                </div>
+                </div>
+              </div>
+            <pre class="js">
+            <code id="experiencia" >
+              
+            </code>
+          </pre>
+        </section>
+        <section class="sintaxis" id="Habilidades">
+            <h2>HABILIDADES</h2>
+            <div class='habil' id="habilidad">
+                <!-- <span class="subhabil" href="#">Html</span>
+                <span class="subhabil" href="#">Css</span>
+                <span class="subhabil" href="#">JavaScript</span>
+                <span class="subhabil" href="#">Python</span>
+                <span class="subhabil" href="#">Wolfram</span>
+                <span class="subhabil" href="#">Sql Server</span>
+                <span class="subhabil" href="#">Html</span>
+                <span class="subhabil" href="#">Css</span>
+                <span class="subhabil" href="#">JavaScript</span>
+                <span class="subhabil" href="#">Python</span>
+                <span class="subhabil" href="#">Wolfram</span>
+                <span class="subhabil" href="#">Sql Server</span> -->
+            </div>
+            <pre class="js">
+          </pre>
+        </section>
+        <section class="sintaxis" id="Cursos">
+            <h2>CURSOS</h2>
+                <div class="cursos">
+                    <div class="card 1">
+                        <div class="card_image"> <img src="./img/javascript.png" /> </div>
+                        <div class="card_title title-black">
+                          <p>JavaScript</p>
+                          <p style="font-size: 1rem">Lenguaje que nos da dinamismo a las paginas web</p>
+                        </div>
+                    </div>
+                    <div class="card 1">
+                        <div class="card_image"> <img src="./img/pngegg (1).png" /> </div>
+                        <div class="card_title title-black">
+                          <p> HTML</p>
+                          <p style="font-size: 1rem">Lenguaje  que estructura y desplega una página web</p>
+                        </div>
+                    </div>
+                    <div class="card 1">
+                        <div class="card_image"> <img src="./img/css.png" /> </div>
+                        <div class="card_title title-black">
+                          <p>CSS</p>
+                          <p style="font-size: 1rem"> Lenguaje usado para definir presentaciones en HTML </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- formulario -->
+        <div class="conteformmain">
+            <div class="contenform">
+                <div class="contacform">
+                    <h2 id='contacto' style="color: #ffffff;">Contacto</h2>
+                    <p> Direccion:</p>
+                    <p> Milagro,Ecuador</p>
+                    <p>email:</p>
+                    <p> miguelpico@gmail.com</p>
+                    <p>Deje su mensaje y con gusto le contestare</p>
+                </div>
+                <div class="frm">
+                    <form action="">
+                        <div class="formgrupo">
+                            <input type="text" id="nombre" class="formcontrol" placeholder="Nombre" title="El nombre solo acepta letras" pattern="^[A-Za-zÑñáéíóú\s]+$" required>
+                        </div>
+                        <div class="formgrupo">
+                            <input type="email" id="email" class="formcontrol" placeholder="Email" title="Email ingresado es incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                        </div>
+                        <div class="formgrupo">
+                            <textarea name="" id="comentario" cols="30" rows="10" class="formcontrol" placeholder="Envianos tu mensaje" title="tu comentario no debe exceder de 255 caracteres" data-pattern="^.{2,255}$" required></textarea>
+                        </div>
+                        <div class="formgrupo">
+                            <button type="submit" id="enviar" class="btnsubmit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="saludos" id="saludos">
+                <!-- <span id="closex" class="close">&times;</span> -->
+                <!-- <span id="closex" class="close">Aceptar</span> -->
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

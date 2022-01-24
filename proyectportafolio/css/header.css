@@ -1,0 +1,45 @@
+main{
+    margin-top: 20;
+}
+h2{
+    font-size: 40px;
+    color:#0F7058
+}
+
+.sintaxis{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    max-width: var(--container-width);
+    min-width: 400px;
+    margin: 0 auto;
+    padding:10px;
+   
+  }
+  .js {
+    width: 760px;
+    max-width: 100%;
+    min-width: 240px;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    box-shadow: 0px 5px 16px 0px var(--text-color-inverse);
+    overflow: hidden;
+    color: var(--text-color-inverse);
+    font-weight: 900;
+    font-size:1.1rem
+  }
+  code span{
+    color:rgb(33, 122, 182);
+    font-weight:900;
+  }
+  .btndes{
+    margin-top:2rem;
+    margin: 2rem;
+    background:black;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-decoration: none ;
+
+  }
